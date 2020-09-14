@@ -1,6 +1,6 @@
 {
     "name": "MLX90614",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "makecode micro:bit extension for MLX90614 IR thermometer.",
     "dependencies": {
         "core": "*"
