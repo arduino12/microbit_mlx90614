@@ -17,7 +17,7 @@ namespace MLX90614 {
     let MLX90614_I2C_ADDR = 0x5A
 
     function read_reg_uint16(reg: number): number {
-        pins.i2cWriteNumber(MLX90614_I2C_ADDR, reg, NumberFormat.UInt8BE, true);
+        pins.i2cWriteNumber(MLX90614_I2C_ADDR, reg, NumberFormat.UInt8BE, false);
         return pins.i2cReadNumber(MLX90614_I2C_ADDR, NumberFormat.UInt16LE);
     }
 
