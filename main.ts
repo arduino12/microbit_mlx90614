@@ -12,7 +12,7 @@ enum MLX90614_TEMPERATURE_ORIGIN {
 /**
  * MLX90614 block
  */
-//% weight=100 color=#ff7d30 icon="fa-thermometer" block="MLX90614"
+//% weight=100 color=#ff7d30 icon="\uf2c7" block="MLX90614"
 namespace MLX90614 {
     let MLX90614_I2C_ADDR = 0x5A
 
@@ -24,7 +24,7 @@ namespace MLX90614 {
     /**
      * temperature
      */
-    //% blockId="MLX90614_TEMPERATURE" block="%temperature_origin temperature °C"
+    //% blockId="MLX90614_TEMPERATURE" block="%temperature_origin temperature (°C)"
     //% weight=80 blockGap=8
     export function temperature(temperature_origin: MLX90614_TEMPERATURE_ORIGIN): number {
         let t = read_reg_uint16(temperature_origin);
